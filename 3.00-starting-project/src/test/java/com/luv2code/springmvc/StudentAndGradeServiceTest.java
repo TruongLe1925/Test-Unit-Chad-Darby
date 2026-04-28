@@ -1,7 +1,7 @@
 package com.luv2code.springmvc;
 
 import com.luv2code.springmvc.models.CollegeStudent;
-import com.luv2code.springmvc.repository.studentDAO;
+import com.luv2code.springmvc.repository.StudentDAO;
 import com.luv2code.springmvc.service.StudentAndGradeService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +26,7 @@ public class StudentAndGradeServiceTest {
     @Autowired
     private JdbcTemplate jdbc;
     @Autowired
-    private studentDAO studentDao;
+    private StudentDAO studentDao;
     @BeforeEach
     public void setup() {
 //        jdbc.execute("INSERT INTO student (firstname, lastname, email_address) VALUES ('John', 'Doe', 'john.doe@example.com')");
